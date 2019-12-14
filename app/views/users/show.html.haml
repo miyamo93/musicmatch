@@ -6,5 +6,5 @@
       - if current_user.following?(@user)
         #liked.btn.btn-default いいね済
       - else
-        = render 'follow', {relationship: @relationship}
+        = render 'shared/follow', {relationship: @relationship}
       %br= @user.profile
