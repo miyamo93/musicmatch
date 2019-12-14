@@ -5,5 +5,6 @@ class RelationshipsController < ApplicationController
   private
 
   def create_params
+    params.permit(:following_id)
   end
 end
